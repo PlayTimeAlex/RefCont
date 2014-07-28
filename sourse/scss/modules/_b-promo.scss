@@ -1,0 +1,34 @@
+.b-promo{
+    height: 672px;
+    padding: 49px 0 0;
+    box-sizing: border-box;
+    background: url(../images/promo-bg.jpg) no-repeat center bottom;
+    &__title{
+        $font-size: 47;
+        font-size: em($font-size);
+        color: #000;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        .small{
+            font-size: em(27, $font-size);
+            font-weight: 300;
+            display: block;
+            letter-spacing: -1.5px;
+        }
+    }
+    &__logotypes{
+        text-align: center;
+        padding: em(18) 0;
+        img{
+            margin: 0 em(24);
+            display: inline-block;
+            opacity: .3;
+            transition: opacity 0.3s ease;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}

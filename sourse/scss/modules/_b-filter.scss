@@ -1,0 +1,121 @@
+.b-filter{
+    border-radius: 8px / 9px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(1,1,1,.1);
+    padding: 0 em(7) em(16) em(19);
+    border-bottom:5px solid #eaeaea;
+    margin: em(5) 0 0;
+    position: relative;
+    z-index: 10;
+    &__tabel{
+        width: 100%;
+        text-align: left;
+        th{
+            font-size: em(15);
+            font-weight: 300;
+            padding: 6px;
+            box-sizing: border-box;
+            letter-spacing: 0.5px;
+        }
+        td{
+            padding: 1px 6px;
+        }
+    }
+    /*&__select{
+        background-color: #f4f4f4;
+        border-radius:10px;
+        border:none;
+        display: block;
+        width: 100%;
+        font-size: em(15);
+        color: rgba(0, 0, 0, .5);
+        font-weight: 300;
+        line-height: 1;
+        padding: 7px 12px;
+        &:focus{
+            outline: none;
+        }
+    }*/
+    &__select{
+        display: block!important;
+        .jq-selectbox__select{
+            background-color: #f4f4f4;
+            border-radius:10px;
+            border:none;
+            display: block;
+            width: 100%;
+            font-size: em(15);
+            color: rgba(0, 0, 0, .5);
+            font-weight: 300;
+            line-height: 1;
+            padding: 7px 29px 7px 12px;
+            box-sizing: border-box;
+            cursor: default;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        &.focused{
+            .jq-selectbox__select{
+                background-color: #fff;
+                box-shadow: 0 0 3px rgba(0,148,232,.65);
+            }
+        }
+        .jq-selectbox__select-text{
+            display: block;
+            width: auto!important;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .jq-selectbox__trigger{
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            border-top: 4px solid #b2b2b2;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            margin-top: -2px;
+        }
+        .jq-selectbox__dropdown{
+            width: 100%;
+            border-radius: 4px;
+            background-color: #f3f3f3;
+            box-shadow: 0 3px 7px rgba(0,0,0,.35);
+            li{
+                color: #6b6b6b;
+                $font-size: 15;
+                font-size: em($font-size);
+                padding: em(4, $font-size) em(17, $font-size);
+                transition: background-color 0.3s ease, color 0.3s ease;
+                cursor: default;
+                &:hover, &.selected{
+                    color: #ffffff;
+                    background-color: #0093e7;
+                }
+            }
+        }
+    }
+    &__submit{
+        position: absolute;
+        border:none;
+        right: 0;
+        top:100%;
+        background: #ffa900;
+        color: #fff;
+        cursor: pointer;
+        $font-size: 16;
+        font-size: em(16);
+        border-radius: 0 0  8px 8px;
+        padding: em(13, $font-size) em(35, $font-size) em(13, $font-size) em(25, $font-size);
+        text-align: center;
+        z-index: -1;
+        margin: 0;
+        &:before{
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            width: 15px;
+            height: 15px;
+            background:url(../images/sprite.png) no-repeat -104px 0;
+            margin:-3px 12px 0 0;
+        }
+    }
+}

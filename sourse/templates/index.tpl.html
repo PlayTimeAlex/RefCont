@@ -1,0 +1,142 @@
+@@include('blocks/_b-header.html')
+        <div class="b-promo">
+            <div class="container">
+                <h1 class="b-promo__title">
+                    <span class="small">Продажа и Доставка</span>Рефрижераторных Контейнеров
+                </h1>
+                <div class="b-promo__logotypes">
+                    <!-- Если в ТЗ не указано то предполагаю что ссылка ведет в каталог контейнеров но с фильтром по производителю. -->
+                    <a href="#"><img src="images/content/logo1.png" alt="Logo name"/></a><a href="#"><img src="images/content/logo2.png" alt="Logo name"/></a><a href="#"><img src="images/content/logo3.png" alt="Logo name"/></a><a href="#"><img src="images/content/logo1.png" alt="Logo name"/></a><a href="#"><img src="images/content/logo2.png" alt="Logo name"/></a><a href="#"><img src="images/content/logo3.png" alt="Logo name"/></a>
+                </div>
+                <div class="b-filter">
+                    <form action="/" method="get">
+                        <table class="b-filter__tabel">
+                            <thead>
+                            <tr>
+                                <th style="width: 18%;">Год выпуска:</th>
+                                <th style="width: 18.6%;">Размер:</th>
+                                <th style="width: 18%;">Модель</th>
+                                <th style="width: 18.6%;">Производитель</th>
+                                <th style="width: 11.6%;">Состояние</th>
+                                <th>Тип контейнера</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <select class="b-filter__select">
+                                        <option value="">1997-2000</option>
+                                        <option value="">1997-2000</option>
+                                        <option value="">1997-2000</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="b-filter__select">
+                                        <option value="">40’</option>
+                                        <option value="">40’</option>
+                                        <option value="">40’</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="b-filter__select">
+                                        <option value="">40’</option>
+                                        <option value="">40’</option>
+                                        <option value="">40’</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="b-filter__select">
+                                        <option value="">Carrier</option>
+                                        <option value="">Carrier</option>
+                                        <option value="">Carrier</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="b-filter__select">
+                                        <option value="">Б/У</option>
+                                        <option value="">Б/У</option>
+                                        <option value="">Б/У</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="b-filter__select">
+                                        <option value="">Морской</option>
+                                        <option value="">Морской</option>
+                                        <option value="">Морской</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <button class="b-filter__submit" type="submit">НАЙТИ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+<div class="pr-homecontent">
+    <div class="container">
+        <div class="b-saleslider">
+            <ul class="slides">
+                <li>
+                    <div class="b-saleslider__header">
+                        <h2>Супер цена на контейнеры фирмы Carrier<span class="detalis">Акции действительны с 11.06.2014 по 31.09.2014</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="b-saleslider__header">
+                        <h2>Супер цена на контейнеры фирмы Carrier<span class="detalis">Акции действительны с 11.06.2014 по 31.09.2014</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="b-saleslider__header">
+                        <h2>Супер цена на контейнеры фирмы Carrier<span class="detalis">Акции действительны с 11.06.2014 по 31.09.2014</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                        <div class="span3">
+                            @@include('blocks/_catalog-item.html')
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        @@include('blocks/_b-csidebar.html')
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

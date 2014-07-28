@@ -1,0 +1,87 @@
+.pr{
+    &-button{
+        display: inline-block;
+        font-family: $base__font;
+        line-height: 1.5;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE0NSAzNyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSIgeDI9IjUwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZiZDAxIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZhMjAxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNDUiIGhlaWdodD0iMzciIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==) repeat-x;
+        background-size: 100% 100%;
+        border-radius: 9px;
+        background-color: #f3f3f3;
+        box-shadow: 0 1px 0 rgba(255,90,0,.2);
+        text-align: center;
+        color: #fff;
+        $font-size: 17;
+        font-size: em($font-size);
+        text-shadow: 0 1px 0 rgba(0,1,1,.13);
+        padding: em(6, $font-size) em(28, $font-size);
+        text-decoration: none;
+        border: 0;
+        cursor: pointer;
+        letter-spacing: -0.8px;
+        &:hover{
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE0NSAzNyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSIgeDI9IjUwJSIgeTI9IjEwMCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZhMjAxIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZiZDAxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNDUiIGhlaWdodD0iMzciIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+        }
+    }
+    &-dectitle{
+        $font-size: 47;
+        font-weight: 700;
+        font-size: em($font-size);
+        position: relative;
+        letter-spacing: -2.5px;
+        padding-bottom: em(6, $font-size);
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 77px;
+            height: 7px;
+            background-color: #ffbd01;
+        }
+    }
+    &-title{
+        $font-size: 43;
+        font-size: em($font-size);
+        font-weight: 700;
+        letter-spacing: -2.5px;
+        line-height: 1.7;
+    }
+    &-helplink{
+        $font-size: 13;
+        font-size: em($font-size);
+        color: #728495;
+        line-height: 1.85;
+        display: block;
+        cursor: pointer;
+        padding: 0 0 0 em(75, $font-size);
+        margin: em(19, $font-size) 0 em(5, $font-size) 0;
+        min-height: 50px;
+        position: relative;
+        &:before{
+            content:'';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            background: url(../images/sprite.png) no-repeat 0 -73px;
+        }
+        &.icon-2:before{
+            background-position: -50px -73px;
+        }
+        &.icon-3:before{
+            background-position: -100px -73px;
+        }
+        &.icon-4:before{
+            background-position: -150px -73px;
+        }
+        &.icon-5:before{
+            background-position: -200px -73px;
+        }
+    }
+    &-homecontent{
+        background: url(../images/bg-left.png) no-repeat left top, url(../images/bg-right.png) no-repeat right top;
+    }
+}
