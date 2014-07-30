@@ -12,23 +12,6 @@
             text-decoration: underline;
         }
     }
-    &__date{
-        color: rgba(80,87,82,.7);
-        $font-size: 13;
-        font-size: em($font-size);
-        position: relative;
-        padding: em(3, $font-size) 0 em(3, $font-size) em(21, $font-size);
-        &:before{
-            content:"";
-            width: 12px;
-            display: block;
-            height: 12px;
-            position: absolute;
-            top: 5px;
-            left: 0;
-            background:url(../images/sprite.png) no-repeat -290px 0;
-        }
-    }
     &__item{
         padding-bottom: em(40);
     }
@@ -40,10 +23,10 @@
         border: 1px solid #517591;
         border-radius: 8px;
         text-decoration: none;
-        padding: 8px 12px;
+        padding: 3px 12px;
         float: right;
         letter-spacing: 0;
-        margin-top: 20px;
+        margin-top: 25px;
         transition: opacity 0.3s ease;
         &:hover{
             opacity: 1;

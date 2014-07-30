@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic);
 @font-face {
     font-family: 'als_rublregular';
@@ -21,6 +21,23 @@
     width: 980px;
     margin: 0 auto;
 }
+.align-right{
+    text-align: right;
+}
+.pluso{
+    float: right;
+    margin-top: em(5);
+}
+.img-left{
+    display: block;
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+.img-right{
+    display: block;
+    float: left;
+    margin: 20px 0 20px 20px;
+}
 @import "modules/b-header";
 @import "modules/b-footer";
 @import "modules/b-promo";
@@ -31,4 +48,9 @@
 @import "modules/b-csidebar";
 @import "modules/b-newswidget";
 @import "modules/b-menu";
-
+@import "modules/b-newscat";
+@import "modules/b-news";
+@import "modules/b-text";
+@import "modules/b-gallery";
+@import "modules/b-popup";
+@import "modules/b-delivery";

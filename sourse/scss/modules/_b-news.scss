@@ -1,0 +1,41 @@
+.b-news{
+    &__date{
+        color: rgba(80,87,82,.7);
+        $font-size: 13;
+        font-size: em($font-size);
+        position: relative;
+        padding: em(3, $font-size) 0 em(3, $font-size) em(21, $font-size);
+        display: block;
+        &:before{
+            content:"";
+            width: 12px;
+            display: block;
+            height: 12px;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            background:url(../images/sprite.png) no-repeat -290px 0;
+        }
+        &_large{
+            padding-left: em(25, $font-size);
+            letter-spacing: -0.5px;
+            &:before{
+                width: 15px;
+                height: 14px;
+                top: 4px;
+                background:url(../images/sprite.png) no-repeat -331px 0;
+            }
+        }
+        &_inner{
+            margin-bottom: em(10, $font-size);
+        }
+    }
+    &__title{
+        $font-size: 20;
+        font-size: em($font-size);
+        font-weight: 500;
+        line-height: 1.2;
+        padding-bottom: em(11, $font-size);
+    }
+
+}

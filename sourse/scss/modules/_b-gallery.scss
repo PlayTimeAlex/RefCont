@@ -1,0 +1,11 @@
+.b-gallery{
+    padding: em(10) 0;
+    img{
+        display: block;
+        width: 100%;
+    }
+    a{
+        display: block;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,69 @@
+@@include('blocks/_b-header.html')
+<div class="pr-content">
+    <div class="container">
+        <div class="pr-content__header">
+            <div class="row">
+                <div class="span6">
+                    <h1 class="pr-dectitle">Новости</h1>
+                </div>
+                <div class="span6 align-right">
+                    <!-- в случае выбора сортировки по двум параметрам в запросе их будет два.Но это не обсуждалось с заком так что нужно читать тз.  -->
+                    <select class="pr-select pr-select_link">
+                        <option value="archivenews.html?sort=asc">Новые</option>
+                        <option value="archivenews.html?sort=desc">Старые</option>
+                    </select>
+                    <select class="pr-select pr-select_link">
+                        <option value="archivenews.html?sort=all">Все</option>
+                        <option value="archivenews.html?sort=action">Акции</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="pr-content__content">
+            <div class="b-newscat">
+                <div class="row">
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                    <div class="span6">
+                        @@include('blocks/_catalog-news-item.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('blocks/_b-csidebar.html')
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

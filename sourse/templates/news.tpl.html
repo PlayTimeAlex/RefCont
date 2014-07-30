@@ -1,0 +1,52 @@
+@@include('blocks/_b-header.html')
+<div class="pr-content">
+    <div class="container">
+        <div class="pr-content__header">
+            <!--здесь заголовок h2 так как он не оснеовной-->
+            <h2 class="pr-dectitle">Новости</h2>
+        </div>
+        <div class="pr-content__content">
+            <h1 class="b-news__title">Предлагаем вашему вниманию уникальные остатки от рефрижераторных контейнеров в виде тоннеля.</h1>
+            <time datetime="2014-04-23" class="b-news__date b-news__date_inner">23 Апрель 2014</time>
+            <div class="b-text">
+                <div class="b-gallery">
+                    <div class="row">
+                        <!-- изображения должны быть одинаоквых размеров. Думаю при загрузке должно генерироваться изображение специально для вставки в галерею. 240x180.-->
+                        <div class="span3"><a class="galimg" href="images/content/galimg_large.jpg"><img src="images/content/galimg.jpg" alt="Image alt"/></a></div>
+                        <div class="span3"><a class="galimg" href="images/content/galimg_large.jpg"><img src="images/content/galimg.jpg" alt="Image alt"/></a></div>
+                        <div class="span3"><a class="galimg" href="images/content/galimg_large.jpg"><img src="images/content/galimg.jpg" alt="Image alt"/></a></div>
+                    </div>
+                </div>
+                <p>Предлагаем вашему вниманию уникальные остатки от рефрижераторных контейнеров в виде тоннеля.</p>
+                <p>Данные обрезки — это часть рефконтейнера с термоизоляцией.</p>
+                <p>Эта часть контейнера является отличной заготовкой для бытовки ,сарая ,либо бани на садовом участке. Доставка в пределах Санкт-Петербурга и Ленинградской области за наш счет, в радиусе 50 км.</p>
+                <h4>Технические характеристики:</h4>
+                <p>Длина — 6012 мм</p>
+                <p>Высота — 2591мм</p>
+                <p>Ширина- 2438 мм</p>
+            </div>
+            <div class="pr-content__bottom">
+                <div class="row">
+                    <div class="span4">
+                        <a class="pr-back" href="index.html">Вернутся на главную</a>
+                    </div>
+                    <div class="span8">
+                        <!-- http://share.pluso.ru/ -->
+                        <script type="text/javascript">(function() {
+                            if (window.pluso)if (typeof window.pluso.start == "function") return;
+                            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                                var h=d[g]('body')[0];
+                                h.appendChild(s);
+                            }})();</script>
+                        <div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('blocks/_b-csidebar.html')
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

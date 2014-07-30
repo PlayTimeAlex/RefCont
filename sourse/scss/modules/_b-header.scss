@@ -4,7 +4,7 @@
         height: 120px; //logo height
         padding-left: 166px; //logo width
         border-radius:0 0 8px 8px;
-        overflow: hidden;
+        /*overflow: hidden;*/
         &:after{
             content:"";
             display: block;
@@ -24,6 +24,7 @@
         z-index: 10;
     }
     &__nav{
+        $hcolor:#0394e5;
         height: 56px;
         background:#fff;
         position: absolute;
@@ -35,7 +36,13 @@
         border-radius: 8px;
         .item{
             display: inline-block;
-            padding-top: em(10);
+            padding: em(10) 0 em(7);
+            position: relative;
+            z-index: 25;
+            transition: background-color 0.3s ease;
+            &.parent{
+                border-radius:5px 0 0 0;
+            }
             > a{
                 display: block;
                 letter-spacing: 0.2px;
@@ -47,12 +54,67 @@
                 font-family: $secondary__font;
                 padding: em(5, $font-size) em(11, $font-size);
                 border-radius: 9px;
-                &:hover{
-                    background-color: #f4f4f4;
+            }
+            &:hover{
+                background-color: $hcolor;
+                > a{
+                    color: #ffffff;
                 }
             }
-            &.current > a{
+            &.current{
                 background-color: #f4f4f4;
+                &:hover{
+                    background-color: $hcolor;
+                }
+            }
+        }
+        .sub-menu{
+            position: absolute;
+            top: 100%;
+            left:0;
+            border-radius:0 5px 5px 5px;
+            border-bottom:1px solid #fff;
+            display: none;
+            opacity: 0;
+            overflow: hidden;
+            &.left{
+                left: auto;
+                right: 0;
+                border-radius:5px 0 5px 5px;
+            }
+            &__item{
+                list-style:none;
+                width: em(200);
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAACCAYAAADo1Rj8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ5NTgzN0U2MTdGRDExRTRBN0M3OEI4OTI2OENEODc1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ5NTgzN0U3MTdGRDExRTRBN0M3OEI4OTI2OENEODc1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDk1ODM3RTQxN0ZEMTFFNEE3Qzc4Qjg5MjY4Q0Q4NzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDk1ODM3RTUxN0ZEMTFFNEE3Qzc4Qjg5MjY4Q0Q4NzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5nfjo3AAAAd0lEQVR42sxTsQ3AMAjDUvtG3+or/T2DOzdSgh0ylAkjY4QMIImIOOMbGOQOVjV25Qpe4Tp1JjP7fkY9mNSRcGnqKZg/7VU47bjuJxJzXaMVDUdzZnZvvKOrcDHgwTjOykNgQbs6d8ez9hoOzrizWZjciLzvK8AAKL4z9AKmi/AAAAAASUVORK5CYII=) no-repeat center bottom;
+                background-size: 100% 2px;
+                background-color: $hcolor;
+                padding-bottom: 2px;
+                &:hover{
+                    background-color: darken($hcolor, 5);
+                }
+                &:last-child{
+                    background-image: none;
+                }
+                a{
+                    $font-size: 14;
+                    font-size: em($font-size);
+                    text-decoration: none;
+                    display: block;
+                    position: relative;
+                    color: #ffffff;
+                    display: block;
+                    padding: em(12, $font-size) em(10, $font-size) em(12, $font-size) em(35, $font-size);
+                    &:before{
+                        content:"";
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        background-color: #3db1f3;
+                        position: absolute;
+                        top: em(18, $font-size);
+                        left:em(15, $font-size);
+                    }
+                }
             }
         }
     }
