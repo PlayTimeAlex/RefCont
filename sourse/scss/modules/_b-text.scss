@@ -72,4 +72,62 @@
     img{
         max-width: 100%;
     }
+    table{
+        width: 100%;
+        margin: em(20) 0;
+        caption{
+            $font-size: 15;
+            font-size: em($font-size);
+            text-align: left;
+            padding: em(0) em(38, $font-size) em(28, $font-size);
+
+        }
+        th{
+            $font-size: 15;
+            font-size: em($font-size);
+            font-weight: 500;
+            text-align: center;
+            background-color: #e3e3e3;
+            padding: em(18, $font-size) 0;
+            &:first-child{
+                padding-left: em(38, $font-size);
+                text-align: left;
+            }
+
+        }
+        td{
+            $font-size: 15;
+            font-size: em($font-size);
+            padding: em(7, $font-size) 0;
+            border-bottom: 1px solid #999999;
+            text-align: center;
+            font-weight: 300;
+            &:first-child{
+                padding-left: em(38, $font-size);
+                text-align: left;
+            }
+        }
+        tr:nth-child(even){
+            td{
+                background-color: #e3e3e3;
+            }
+        }
+    }
+    a[href$='.pdf']{
+        color: #000;
+        display: block;
+        padding-left: 90px;
+        position: relative;
+        min-height:31px;
+        &:before{
+            content:"";
+            display: block;
+            height: 31px;
+            width: 31px;
+            left: 35px;
+            position: absolute;
+            top: 7px;
+            background: url(../images/sprite.png) no-repeat -393px 0;
+        }
+    }
 }

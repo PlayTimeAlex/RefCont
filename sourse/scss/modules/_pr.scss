@@ -88,6 +88,9 @@
         background: url(../images/bg-left.png) no-repeat left top, url(../images/bg-right.png) no-repeat right top;
         &__header{
             padding: em(20) 0 em(8);
+            .filter{
+                margin-top: em(13);
+            }
         }
         &__content{
             padding: em(20) 0 0 0;
@@ -105,7 +108,7 @@
             border:none;
             display: block;
             width: 100%;
-            font-size: em(13);
+            font-size: em(14);
             color: rgba(0, 0, 0, .5);
             font-weight: 300;
             line-height: 1;
@@ -120,6 +123,7 @@
             width: auto!important;
             overflow: hidden;
             white-space: nowrap;
+            font-weight: 500;
         }
         .jq-selectbox__trigger{
             position: absolute;
@@ -215,5 +219,9 @@
         margin: em(60) 0 em(30);
         font-size:em(15);
         background:rgba(0,0,0,.5);
+    }
+    &-pricerow{
+        margin-bottom: em(29);
+        
     }
 }

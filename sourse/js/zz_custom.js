@@ -25,6 +25,18 @@
                 $(this).css('display', 'none');
             });
         });
+
+        //spoiler
+        $('.b-spoiler__header').click(function(){
+            var container = $(this).parent();
+            if(container.hasClass('open')){
+                container.removeClass('open')
+                $('.b-spoiler__content', container).stop().slideUp('fast');
+            } else {
+                container.addClass('open')
+                $('.b-spoiler__content', container).stop().slideDown('fast');
+            }
+        });
     });
 
     $(window).load(function() {
@@ -33,5 +45,16 @@
             controlNav: false,
             pauseOnHover: true
         });
+        $('.b-containers__catalog').carousel('#p', '#n', 110);
+        /*$('.b-containers__catalog').flexslider({
+            animation: "slide",
+            controlNav: false,
+            pauseOnHover: true,
+            itemWidth: 100,
+            itemMargin: 10,
+            move: 1
+        });
+*/
+
     });
 }(jQuery));

@@ -54,3 +54,13 @@
 @import "modules/b-gallery";
 @import "modules/b-popup";
 @import "modules/b-delivery";
+@import "modules/b-containers";
+@import "modules/b-spare";
+@import "modules/b-spoiler";
+@import "modules/b-vacancy";
+
+@media (max-width: 1100px){
+    .pr-content{
+        background-image: none;
+    }
+}

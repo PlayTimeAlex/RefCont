@@ -11,6 +11,14 @@
 
         <script src="js/all.min.js"></script>
         <!--[if lte IE 8 ]><script type="text/javascript">window.location.href="ie8min/index.html";</script><![endif]-->
+
+        <!--Данный стиль хорошо было бы вствлять только на странице containers.html-->
+        <style type="text/css">
+            .b-containers:after, .b-containers__catalog .viewport{
+                mask: url('#fade_right_svg_mask');
+            }
+        </style>
+
     </head>
     <body>
         <header class="b-header">
@@ -53,14 +61,16 @@
                 </div>
                 <div class="span6 align-right">
                     <!-- в случае выбора сортировки по двум параметрам в запросе их будет два.Но это не обсуждалось с заком так что нужно читать тз.  -->
-                    <select class="pr-select pr-select_link">
-                        <option value="archivenews.html?sort=asc">Новые</option>
-                        <option value="archivenews.html?sort=desc">Старые</option>
-                    </select>
-                    <select class="pr-select pr-select_link">
-                        <option value="archivenews.html?sort=all">Все</option>
-                        <option value="archivenews.html?sort=action">Акции</option>
-                    </select>
+                    <div class="filter">
+                        <select class="pr-select pr-select_link">
+                            <option value="archivenews.html?sort=asc">Новые</option>
+                            <option value="archivenews.html?sort=desc">Старые</option>
+                        </select>
+                        <select class="pr-select pr-select_link">
+                            <option value="archivenews.html?sort=all">Все</option>
+                            <option value="archivenews.html?sort=action">Акции</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
