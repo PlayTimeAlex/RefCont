@@ -1,0 +1,31 @@
+.b-paginator {
+    margin-top: em(30);
+    &__item {
+        display: inline-block;
+    }
+    &__text {
+        font-size: em(14);
+        color: #545454;
+        display: inline-block;
+        padding-right: em(10, 14);
+    }
+    &__link {
+        text-decoration: none;
+        $font-size: 14;
+        font-size: em($font-size);
+        display: block;
+        line-height: em(33, $font-size);
+        padding: 0 em(5, $font-size);
+        min-width: em(33, $font-size);
+        box-sizing: border-box;
+        text-align: center;
+        &_current, &:hover {
+            background: #ffa900;
+            color: #fff;
+            cursor: default;
+        }
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}

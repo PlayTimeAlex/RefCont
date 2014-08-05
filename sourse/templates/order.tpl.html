@@ -1,0 +1,76 @@
+@@include('blocks/_b-header.html')
+<div class="pr-content">
+    <div class="container">
+        <div class="pr-content__header">
+            <h1 class="pr-dectitle">Оформить заказ</h1>
+        </div>
+        <div class="pr-content__content">
+            <table class="b-order__table">
+                <thead>
+                <tr>
+                    <th>Год выпуска:</th>
+                    <th>Размер:</th>
+                    <th>Модель:</th>
+                    <th>Производитель:</th>
+                    <th>Состояние:</th>
+                    <th>Тип контейнера:</th>
+                    <th>Цена:</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1997-2000</td>
+                    <td>40’</td>
+                    <td>ML2</td>
+                    <td>Carrier</td>
+                    <td>б/у</td>
+                    <td>морской</td>
+                    <td>от 180 000 <span class="rub">a</span></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="b-order__form">
+                <form action="/">
+                    <div class="row">
+                        <div class="span3">
+                            <label class="b-form__label" for="name">Ваше имя:</label>
+                            <input type="text" class="b-form__text" id="name"/>
+                        </div>
+                        <div class="span3">
+                            <label class="b-form__label" for="tel">Номер телефона:</label>
+                            <input type="tel" class="b-form__text b-form__text_tel" id="tel"/>
+                        </div>
+                        <div class="span3">
+                            <label class="b-form__label" for="email">Эл. почта:</label>
+                            <input type="email" class="b-form__text" id="email"/>
+                        </div>
+                        <div class="span3">
+                            <label class="b-form__label" for="city">Город:</label>
+                            <input type="text" class="b-form__text" id="city"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span6">
+                            <label class="b-form__label" for="comment">Ваше сообщение:</label>
+                            <textarea class="b-form__textarea" id="comment" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span2">
+                            <img class="b-form__cimg" src="images/content/capcha.jpg" alt=""/>
+                        </div>
+                        <div class="span3">
+                            <input type="text" class="b-form__text"/>
+                            <span class="b-form b-form__clabel">Введите проверочный код</span>
+                        </div>
+                        <div class="span7">
+                            <button type="submit" class="b-form__submit">заказать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        @@include('blocks/_b-csidebar.html')
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

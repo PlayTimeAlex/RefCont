@@ -1,0 +1,23 @@
+.b-order{
+    &__table{
+        margin-bottom: em(50);
+        width: 100%;
+        $font-size: 14;
+        font-size: em($font-size);
+        text-align: center;
+        th{
+            font-weight: 700;
+            padding: em(8, $font-size) em(15, $font-size);
+            border-bottom: 1px solid #a0a0a0;
+        }
+        td{
+            padding: em(12, $font-size) em(15, $font-size);
+            border-bottom: 1px solid #a0a0a0;
+        }
+    }
+    &__form{
+        .row{
+            margin-bottom: em(45);
+        }
+    }
+}

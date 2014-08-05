@@ -1,0 +1,136 @@
+.b-itemin{
+    &__price{
+        $font-size: 23;
+        font-size: em($font-size);
+        font-weight: 500;
+        .price{
+            color: #0094e8;
+        }
+        padding-top: em(15, $font-size);
+    }
+    &__order{
+        border: 1px solid #b8983b;
+        display: inline-block;
+        text-decoration: none;
+        $font-size: 17;
+        font-size: em($font-size);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 11px;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZDA0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmM4MjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) repeat-x;
+        background-size: 100% 100%;
+        padding: em(7, $font-size) em(19, $font-size);
+        margin: em(22, $font-size) 0 em(40, $font-size);
+    }
+    &__slider{
+        margin-top: em(20);
+        .slides{
+            > li{
+                display: none;
+                list-style: none;
+            }
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    &__slidernav{
+        padding: em(28) em(58);
+        position: relative;
+        .slides{
+            > li{
+                display: none;
+                list-style: none;
+                overflow: hidden;
+                padding: em(8) em(7);
+            }
+        }
+        .flex-active-slide{
+            img{
+                box-shadow:0 0 5px 2px #055e90;
+            }
+        }
+        img{
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            user-select: none;
+        }
+        .flex-prev, .flex-next{
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            padding: 38px 38px 0 0;
+            overflow: hidden;
+            left: 0;
+            top: 50%;
+            margin-top: -24px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAQAAADokgSuAAAAW0lEQVQI113NzQ1AQBRF4Zv47cGGXiy0IGQUZ2UvqEJFkxwMk0He6nzJzRN6LmVkIgk5A5bqmwP65QURi0tzj0VxBuxkHkTvaCX3ILpA/m3raCMWb7KUAURNgw7emnQz6YCkVQAAAABJRU5ErkJggg==) no-repeat center center #0294e6;
+            &.flex-disabled{
+                cursor: default;
+                opacity: 0.2;
+            }
+        }
+        .flex-next{
+            left: auto;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAQAAADokgSuAAAAWklEQVQI103LuwlCURRE0QG/PZhoLwa2IIoWZ2QuahVWdGAZPA73MdFeMBEnR+nFXinnAUtfBkVsfVAuDYOuDbHxQ9k13BTeFlPeFV7W02WWEod5Sqw8PTrlD0NsdDO+gyjTAAAAAElFTkSuQmCC);
+            right: 0;
+        }
+        .flex-direction-nav{
+            width: 0;
+            height: 0;
+            li{
+                list-style: none;
+            }
+        }
+    }
+    &__tech{
+        padding-bottom: em(40);
+        li {
+            $font-size: 15;
+            font-size: em($font-size);
+            padding: em(8, $font-size) em(20, $font-size);
+            list-style:none;
+            &:nth-child(odd){
+                background-color: #d9f0fc;
+            }
+        }
+        .more{
+            background-color: transparent;
+            background: none;
+            $font-size: 15;
+            font-size: em($font-size);
+            border: 0;
+            color: $base__link-color;
+            padding: em(10, $font-size) em(25, $font-size) em(10, $font-size) em(20, $font-size);
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            &:before{
+                content:"";
+                display: block;
+                border-top: 9px solid #000;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -4px;
+            }
+            &.open:before{
+                border-top: 0;
+                border-bottom: 9px solid #000;
+            }
+            .text{
+                display: inline-block;
+                border-bottom: 1px dashed $base__link-color;
+            }
+        }
+    }
+    &__techmore{
+        display: none;
+    }
+}

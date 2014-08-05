@@ -2,7 +2,7 @@
     Colorbox Core Style:
     The following CSS is consistent between example themes and should not be altered.
 */
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999;}
 #cboxWrapper {max-width:none;}
 #cboxOverlay{
     position:fixed;
@@ -23,7 +23,7 @@
 .cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
 #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
 
-/* 
+/*
     User Style:
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
@@ -45,16 +45,19 @@
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
-        
+
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
         #cboxClose{
             display: block;
-            width: 1em;
-            height: 1em;
+            width: 3em;
+            height: 3em;
             position:absolute;
-            top:1.5em;
-            right: 1.5em;
-            background: url(data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiBbDQoJPCFFTlRJVFkgbnNfZmxvd3MgImh0dHA6Ly9ucy5hZG9iZS5jb20vRmxvd3MvMS4wLyI+DQpdPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjQjJCM0IzIiBkPSJNNDQuNDQ2IDU5Ljk5OGwtMjguODkgMjguODg5LTE0LjQ0NC0xNC40NDUgMjguODktMjguODg5LTMwLjAwMi0yOS45OTggMTUuNTU3LTE1LjU1NSAzMC4wMDIgMjkuOTk5IDI4Ljg4OS0yOC44ODkgMTQuNDQ0IDE0LjQ0NS0yOC44ODggMjguODg4IDI5Ljk5NiAyOS45OTktMTUuNTUyIDE1LjU1OC0zMC4wMDItMzAuMDAyeiIvPjwvc3ZnPg==) no-repeat;
-            background-size: 100% 100%;
+            top:-2.5em;
+            right: -2.5em;
+            background: url(data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiBbDQoJPCFFTlRJVFkgbnNfZmxvd3MgImh0dHA6Ly9ucy5hZG9iZS5jb20vRmxvd3MvMS4wLyI+DQpdPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjQjJCM0IzIiBkPSJNNDQuNDQ2IDU5Ljk5OGwtMjguODkgMjguODg5LTE0LjQ0NC0xNC40NDUgMjguODktMjguODg5LTMwLjAwMi0yOS45OTggMTUuNTU3LTE1LjU1NSAzMC4wMDIgMjkuOTk5IDI4Ljg4OS0yOC44ODkgMTQuNDQ0IDE0LjQ0NS0yOC44ODggMjguODg4IDI5Ljk5NiAyOS45OTktMTUuNTUyIDE1LjU1OC0zMC4wMDItMzAuMDAyeiIvPjwvc3ZnPg==) no-repeat center center;
+            background-size: 1em 1em;
+            background-color: #fff;
+            border-radius:50%;
+            z-index: 30;
         }

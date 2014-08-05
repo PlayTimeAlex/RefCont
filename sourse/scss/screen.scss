@@ -38,6 +38,7 @@
     float: left;
     margin: 20px 0 20px 20px;
 }
+@import "modules/b-form";
 @import "modules/b-header";
 @import "modules/b-footer";
 @import "modules/b-promo";
@@ -58,6 +59,9 @@
 @import "modules/b-spare";
 @import "modules/b-spoiler";
 @import "modules/b-vacancy";
+@import "modules/b-order";
+@import "modules/b-paginator";
+@import "modules/b-itemin";
 
 @media (max-width: 1100px){
     .pr-content{

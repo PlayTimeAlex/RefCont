@@ -1,0 +1,62 @@
+.b-form{
+    &__label{
+        display: block;
+        $font-size: 16;
+        font-size: em($font-size);
+        font-weight: 700;
+        padding-bottom: em(20, $font-size);
+    }
+    &__text, &__textarea{
+        $font-size: 16;
+        border:1px solid #aeaeae;
+        height: 2.71em;
+        background-color:#fff;
+        box-sizing: border-box;
+        padding: 0 em(10, $font-size);
+        display: block;
+        margin: 0;
+        width: 100%;
+        transition: box-shadow 0.3s ease;
+        &:focus{
+            outline:none;
+            box-shadow: 0 0 5px #0076a3;
+        }
+    }
+    &__textarea{
+        height:auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        resize: none;
+        vertical-align: top;
+        vertical-align: top;
+    }
+    &__cimg{
+        display: block;
+        width: 100%;
+    }
+    &__clabel{
+        font-style: italic;
+        font-size: em(12);
+        color: #2d3133;
+    }
+    &__submit{
+        $background-color: #00aeef;
+        background-color: $background-color;
+        border: 0;
+        $font-size: 16;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: em(11, $font-size) em(37, $font-size) em(9, $font-size);
+        border-radius:em(22, $font-size);
+        line-height: 1.5;
+        cursor: pointer;
+        font-size: em($font-size);
+        display: block;
+        vertical-align: top;
+        transition: background-color 0.3s ease;
+        &:hover{
+            background-color: darken($background-color, 5)
+        }
+    }
+}
