@@ -357,7 +357,7 @@ strong {
   color: #4d5964;
   padding-left: 25px;
   position: relative;
-  letter-spacing: -0.8px; }
+  letter-spacing: -1px; }
   .b-header__tel:before {
     content: "";
     display: block;
