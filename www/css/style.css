@@ -383,14 +383,19 @@ strong {
     font-size: 1.125em;
     color: #000;
     display: inline-block;
-    padding-right: 15px; }
+    padding-right: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400; }
+    .b-header__tel .tel:last-child {
+      padding-right: 0; }
 .b-header__repair {
   color: #e31f22;
   font-size: 1.4em;
   line-height: 1.29;
   position: relative;
   padding: 0 1.42857em 0 2.85714em;
-  min-height: 2.21429em; }
+  min-height: 2.21429em;
+  text-decoration: none; }
   .b-header__repair:before {
     content: "";
     display: block;
@@ -1640,8 +1645,8 @@ strong {
 .b-itemin__techmore {
   display: none; }
 
-@media (max-width: 1100px) {
-  .pr-content {
+@media (max-width: 1450px) {
+  .pr-content, .pr-homecontent {
     background-image: none; } }
 
 /*grid*/

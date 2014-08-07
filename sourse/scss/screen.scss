@@ -63,8 +63,8 @@
 @import "modules/b-paginator";
 @import "modules/b-itemin";
 
-@media (max-width: 1100px){
-    .pr-content{
+@media (max-width: 1450px){
+    .pr-content, .pr-homecontent{
         background-image: none;
     }
 }
